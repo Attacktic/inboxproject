@@ -13,32 +13,40 @@
     <div class="container">
       <div id="toolbar">
         <button id="check" class="radius"><i class="fa fa-square-o" aria-hidden="true"></i></button>
-        <input type="button" value="Mark as Read" class="radius" disabled/>
-        <input type="button" value="Mark as Unread" class="radius" disabled/>
-        <select class="radius" id="sel" disabled><option>Apply Label</option></select>
-        <select class="radius" id="sel" disabled><option>Remove Label</option></select>
+        <input type="button" id="read" value="Mark as Read" class="radius" disabled/>
+        <input type="button" id="notread" value="Mark as Unread" class="radius" disabled/>
+        <select class="radius" id="alabel" disabled>
+          <option disabled selected>Apply Label</option>
+          <option value="dev">dev</option>
+          <option value="personal">personal</option>
+          <option value="create">Create new...</option>
+        </select>
+        <select class="radius" id="rlabel" disabled>
+          <option disabled selected>Remove Label</option>
+          <option value="dev">dev</option>
+          <option value="personal">personal</option>
+        </select>
         <button id="delete" class="radius" disabled><i class="fa fa-trash-o" aria-hidden="true"></i></button>
         <p id="unread">unread messages</p>
+        <div id="count">0</div>
       </div>
       <div id="messages">
-      <div class="message">
+      <div class="message un">
         <input class="element" type="checkbox"/>
         <button class="star"><i class="fa fa-star-o" aria-hidden="true"></i></button>
         <div class="text"><p>If we override the interface, we can get to the HTTP feed through the virtual EXE interface!</p></div>
       </div>
-      <div class="message">
+      <div class="message un">
         <input class="element" type="checkbox"/>
         <button class="star"><i class="fa fa-star-o" aria-hidden="true"></i></button>
         <div class="text"><p>You can’t input the protocol without calculating the mobile RSS protocol!</p></div>
       </div>
-      <div class="message">
+      <div class="message un">
         <input class="element" type="checkbox"/>
         <button class="star"><i class="fa fa-star-o" aria-hidden="true"></i></button>
         <div class="text"><p>We need to index the mobile PCI bus!</p></div>
       </div>
       </div>
-
-
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>
